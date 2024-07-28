@@ -256,7 +256,7 @@
                                             src="{{ asset('images/team/symbol.png') }}" alt="" /></div>
                                 </div> --}}
                                 <div class="team-info">
-                                    <a href="team-detail.html" class="team-title">
+                                    <a href="/" class="team-title">
                                         Mphatso Mlenga
                                     </a>
                                     <span class="team-destination">

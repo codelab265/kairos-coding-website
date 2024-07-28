@@ -8,16 +8,19 @@
                         <ul class="address-info-list">
                             <li>
                                 <i class="icon">
-                                    <img class="img-fluid" src="images/svg/address-info-contacts.svg" alt="" />
+                                    <img class="img-fluid" src="{{ asset('images/svg/address-info-contacts.svg') }}"
+                                        alt="" />
                                 </i>
                                 <span class="info">
                                     <span>19 Horseshoe Close,
                                     </span>Hemel Hempstead, UK</span>
                             </li>
-                            <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-headphone.svg"
+                            <li><i class="icon"><img class="img-fluid"
+                                        src="{{ asset('images/svg/address-info-headphone.svg') }}"
                                         alt="" /></i><span class="info"><span>(+44) 7519 331 999
                                     </span>Mon-fri 8:30am 6:30pm</span></li>
-                            <li><i class="icon"><img class="img-fluid" src="images/svg/address-info-email.svg"
+                            <li><i class="icon"><img class="img-fluid"
+                                        src="{{ asset('images/svg/address-info-email.svg') }}"
                                         alt="" /></i><span class="info"><span>contact@kairoscoding.com
                                     </span>24x7
                                     online support</span>
