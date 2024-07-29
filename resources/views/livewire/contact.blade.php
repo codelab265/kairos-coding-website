@@ -90,25 +90,45 @@
                                 <h2 class="title"> Need assistance? please fill the form </h2>
                             </div>
                             <div class="form-wrapper">
-                                <form class="contact-form form-style-border">
+                                <form class="contact-form form-style-border" wire:submit.prevent="sendEmail">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <input type="text" class="form-control" placeholder="Name"
-                                                aria-label="Name">
+                                            <input type="text" class="form-control" wire:model="name"
+                                                placeholder="Name" aria-label="Name">
+                                            @error('name')
+                                                <span class="text-danger mt-0">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
-                                            <input type="email" class="form-control" placeholder="Email"
-                                                aria-label="Email">
+                                            <input type="email" class="form-control" wire:model="email"
+                                                placeholder="Email" aria-label="Email">
+                                            @error('email')
+                                                <span class="text-danger mt-0">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="col-md-4">
-                                            <input type="text" class="form-control" id="phone"
+                                            <input type="text" class="form-control" wire:model="phone" id="phone"
                                                 placeholder="Phone">
+                                            @error('phone')
+                                                <span class="text-danger mt-0">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="col-lg-12">
-                                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                            <textarea class="form-control" rows="6" wire:model="message" placeholder="Message"></textarea>
+                                            @error('message')
+                                                <span class="text-danger mt-0">
+                                                    {{ $message }}
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="col-lg-12">
-                                            <a class="btn btn-effect" href="#">
+                                            <button type="submit" class="btn btn-effect">
                                                 <span>Send Massage</span>
                                                 <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +146,7 @@
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>

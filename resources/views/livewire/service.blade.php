@@ -24,12 +24,13 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Information-Security.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Information-Security.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
                                         <img class="img-fluid"
-                                            src="images/svg/services/color-icon/Information-Security.svg"
+                                            src="{{ asset('images/svg/services/color-icon/Information-Security.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="service-content">
@@ -63,12 +64,13 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Data-Synchronization.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Data-Synchronization.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
                                         <img class="img-fluid"
-                                            src="images/svg/services/color-icon/Data-Synchronization.svg"
+                                            src="{{ asset('images/svg/services/color-icon/Data-Synchronization.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="service-content">
@@ -78,9 +80,9 @@
                                             and Android platforms.
                                         </p>
                                         <div class="service-links">
-                                            <a class="btn-arrow" href="#"><svg width="17" height="16"
-                                                    viewBox="0 0 17 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                            <a class="btn-arrow" href="service/mobile-app-development"
+                                                wire:navigate><svg width="17" height="16" viewBox="0 0 17 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_923_134)">
                                                         <path
                                                             d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
@@ -102,11 +104,13 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Mobile-Platforms.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Mobile-Platforms.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
-                                        <img class="img-fluid" src="images/svg/services/color-icon/Mobile-Platforms.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/color-icon/Mobile-Platforms.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="service-content">
@@ -119,8 +123,8 @@
                                             experience across all devices.
                                         </p>
                                         <div class="service-links">
-                                            <a class="btn-arrow" href="#"><svg width="17" height="16"
-                                                    viewBox="0 0 17 16" fill="none"
+                                            <a class="btn-arrow" href="service/web-development" wire:navigate><svg
+                                                    width="17" height="16" viewBox="0 0 17 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_923_135)">
                                                         <path
@@ -143,12 +147,13 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Process-Automation.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Process-Automation.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
                                         <img class="img-fluid"
-                                            src="images/svg/services/color-icon/Process-Automation.svg"
+                                            src="{{ asset('images/svg/services/color-icon/Process-Automation.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="service-content">
@@ -161,8 +166,8 @@
                                             drive efficiency and growth.
                                         </p>
                                         <div class="service-links">
-                                            <a class="btn-arrow" href="#"><svg width="17" height="16"
-                                                    viewBox="0 0 17 16" fill="none"
+                                            <a class="btn-arrow" href="service/cloud-solutions" wire:navigate><svg
+                                                    width="17" height="16" viewBox="0 0 17 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_923_136)">
                                                         <path
@@ -186,12 +191,14 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Event-Processing.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Event-Processing.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
                                         <img class="img-fluid"
-                                            src="images/svg/services/color-icon/Event-Processing.svg" alt="#">
+                                            src="{{ asset('images/svg/services/color-icon/Event-Processing.svg') }}"
+                                            alt="#">
                                     </div>
                                     <div class="service-content">
                                         <h5 class="service-title">
@@ -202,9 +209,9 @@
                                             business performance.
                                         </p>
                                         <div class="service-links">
-                                            <a class="btn-arrow" href="#"><svg width="17" height="16"
-                                                    viewBox="0 0 17 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                            <a class="btn-arrow" href="service/enterprise-solutions"
+                                                wire:navigate><svg width="17" height="16" viewBox="0 0 17 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_923_137)">
                                                         <path
                                                             d="M8.70801 0.959961L9.29825 2.7665C10.2512 5.68321 12.8308 7.77453 15.8928 8.1128C12.8468 8.37564 10.2578 10.4348 9.3276 13.3343L8.70801 15.2657"
@@ -226,12 +233,13 @@
                             <div class="service-wrapper service-style-1">
                                 <div class="service-inner">
                                     <div class="service-icon">
-                                        <img class="img-fluid" src="images/svg/services/Content-Management.svg"
+                                        <img class="img-fluid"
+                                            src="{{ asset('images/svg/services/Content-Management.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="bg-icon">
                                         <img class="img-fluid"
-                                            src="images/svg/services/color-icon/Content-Management.svg"
+                                            src="{{ asset('images/svg/services/color-icon/Content-Management.svg') }}"
                                             alt="#">
                                     </div>
                                     <div class="service-content">
@@ -244,8 +252,8 @@
                                             engagement.
                                         </p>
                                         <div class="service-links">
-                                            <a class="btn-arrow" href="#"><svg width="17" height="16"
-                                                    viewBox="0 0 17 16" fill="none"
+                                            <a class="btn-arrow" href="service/ui-ux-design" wire:navigate><svg
+                                                    width="17" height="16" viewBox="0 0 17 16" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_923_138)">
                                                         <path
