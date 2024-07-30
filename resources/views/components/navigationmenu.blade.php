@@ -1,35 +1,41 @@
 <header class="header header-default header-sticky header-absolute">
     <div class="header-inner">
         <div class="site-logo">
-            <a class="navbar-brand" href="/" wire:navigate>
+            <a class="navbar-brand" href="{{ route('home') }}" wire:navigate>
                 <img src="{{ asset('images/logo.png') }}" width="350" class="img-fluid">
             </a>
         </div>
         <div class="site-menu d-none d-xl-block">
             <ul class="main-menu">
-                <li class="nav-item">
-                    <a class="nav-link" href="/" wire:navigate>
+                <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="/" wire:navigate>
                         Home
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/about-us" wire:navigate>
+                <li class="nav-item {{ request()->routeIs('about-us') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('about-us') ? 'active' : '' }}" href="/about-us"
+                        wire:navigate>
                         About Us
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services" wire:navigate>
+                <li
+                    class="nav-item {{ request()->routeIs('services') || request()->routeIs('service-detail') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('services') || request()->routeIs('service-detail') ? 'active' : '' }}"
+                        href="/services" wire:navigate>
                         Services
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog" wire:navigate>
+                <li
+                    class="nav-item {{ request()->routeIs('blogs') || request()->routeIs('blog-detail') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('blogs') || request()->routeIs('blog-detail') ? 'active' : '' }}"
+                        href="/blogs" wire:navigate>
                         Blog
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact" wire:navigate>Contact</a>
+                <li class="nav-item {{ request()->routeIs('contact-us') ? 'active' : '' }}">
+                    <a class="nav-link {{ request()->routeIs('contact-us') ? 'active' : '' }}" href="/contact"
+                        wire:navigate>Contact</a>
                 </li>
             </ul>
         </div>

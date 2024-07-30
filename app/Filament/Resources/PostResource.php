@@ -7,6 +7,7 @@ use App\Filament\Resources\PostResource\RelationManagers;
 use App\Models\Post;
 use Filament\Forms;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -38,7 +39,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->readOnly()
                     ->required(),
-                MarkdownEditor::make('body')
+                RichEditor::make('body')
                     ->fileAttachmentsDisk('public')
                     ->fileAttachmentsDirectory('posts')
                     ->required()
